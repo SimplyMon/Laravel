@@ -2,6 +2,7 @@
 
 use Illuminate\Routing\RouteAction;
 use Illuminate\Support\Facades\Route;
+// test
 
 Route::get('/', function () {
     return view('welcome');
