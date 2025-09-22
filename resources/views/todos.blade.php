@@ -1,10 +1,7 @@
 <x-layout>
-
-    <div style='color: white;'>
-        @foreach ($todoLists as $todoList)
-            <p><span>{{ $todoList['id'] }}. </span>{{ $todoList['title'] }}</p>
-        @endforeach
-
-    </div>
+    @foreach ($todos as $todo)
+        <p>{{ $todo['title'] }}</p>
+    @endforeach
+    $list = json_decode($response->body(), true);
 
 </x-layout>

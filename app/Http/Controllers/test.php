@@ -2,18 +2,16 @@
 
 namespace App\Http\Controllers;
 
-
 use Illuminate\Support\Facades\Http;
 
-class todosController
+class test
 {
-    public function todosList()
+    public function todoList()
     {
-
         $response = Http::get('http://jsonplaceholder.typicode.com/todos');
 
-        $todos = $response->json();
+        $list = $response->json();
 
-        return view('todos', ['todoLists' => $todos]);
+        return view('todos', ['todos' => $list]);
     }
 }
