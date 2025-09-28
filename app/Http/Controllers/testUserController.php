@@ -5,7 +5,6 @@ namespace App\Http\Controllers;
 use App\Models\TestUser;
 use Illuminate\Http\Request;
 
-// test
 class testUserController
 {
     public function create()
