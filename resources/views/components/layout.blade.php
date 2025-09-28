@@ -12,7 +12,7 @@
 </head>
 
 <body class="bg-[#313131] min-h-screen">
-    <nav class="navbar bg-[#313131] shadow-sm text-[#eee]">
+    <nav class="navbar bg-[#313131] shadow-sm text-[#eee] mb-20">
         <div class="navbar-start">
             <div class="dropdown">
                 <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
@@ -29,7 +29,7 @@
                         <a>Parent</a>
                         <ul class="p-2">
                             <li><a href="/todos">Submenu 1</a></li>
-                            <li><a>Submenu 2</a></li>
+                            <li><a href={{ route('test_users.create') }}>create</a></li>
                             <a></a>
                         </ul>
                     </li>
@@ -46,7 +46,7 @@
                         <summary>Parent</summary>
                         <ul class="p-2 bg-[#313131]">
                             <li><a href="/todos">Submenu 1</a></li>
-                            <li><a>Submenu 2</a></li>
+                            <li><a href={{ route('test_users.create') }}>create</a></li>
                         </ul>
                     </details>
                 </li>
