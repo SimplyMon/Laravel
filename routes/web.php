@@ -4,7 +4,6 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\testController;
 
 use App\Http\Controllers\testUserController;
-// TEST
 
 use App\Http\Controllers\test;
 
