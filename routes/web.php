@@ -9,6 +9,8 @@ use App\Http\Controllers\test;
 
 Route::get('/', [testController::class, 'home']);
 
+Route::get('/about', view());
+
 Route::get('/todos', [test::class, 'todoList']);
 
 Route::get('/test-users/create', [testUserController::class, 'create'])->name('test_users.create');
