@@ -31,5 +31,3 @@ class testController extends Controller
         return view('home', ['postings' => $postings]);
     }
 }
-
-// t
